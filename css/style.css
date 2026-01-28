@@ -141,6 +141,15 @@ section {
 
 /* optional: hide slideshow on small screens */
 @media (max-width: 800px){
-  .face-slideshow{ display:none; }
+  .portrait-slideshow{
+    left: 50%;
+    top: auto;
+    bottom: 2rem;
+    transform: translateX(-50%);
+    width: 70vw;
+    max-width: 320px;
+    aspect-ratio: 3 / 4;
+    z-index: 4;
+  }
 }
 
